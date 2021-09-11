@@ -48,7 +48,7 @@
         transform: translateY(-55%);
         width: 500px;
         height: 650px;
-        background-color: #011d4d5b;
+        background-color: #011d4d80;
         border-radius: 10px;
         padding-top: 50px;
 
@@ -56,14 +56,82 @@
             margin: 0 auto;
             width: 70%;
             height: 450px;
-            background-color: red;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            overflow-y: auto;
+            .messagesContainer{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .botMessagesContainer{
+                justify-content: left;
+                .botImg{
+                    height: 45px;
+                    width: 45px;
+                    background-color: white;
+                    border-radius: 50% 50% 0 50%;
+                }
+                .botMessage{
+                    height: 100%;
+                    width: 210px;
+                    margin-left: 20px;
+                    border-radius: 15px 15px 15px 0 ;
+                    background-color: #68B2FF
+                }
+            }
+            .userMessagesContainer{
+                justify-content: right;
+                .userMessage{
+                    height: 100%;
+                    width: 210px;
+                    margin-left: 20px;
+                    border-radius: 15px 15px 0 15px;
+                    background-color: #002361
+                }
+            }
+            
         }
         .textField{
             width: 85%;
             height: 50px;
             margin: 0 auto;
-            background-color: white;
             margin-top: 80px;
+
+            form{
+                position: relative;
+                textarea{
+                    resize: none;
+                    width: 85%;
+                    height: 50px;
+                    background-color: white;
+                    outline: none;
+                    border: transparent;
+                }
+                input{
+                    display: none;
+                }
+                label{
+                    height: 50px;
+                    width: 50px;
+                    background-color: white;
+                    border: transparent;
+                    outline: transparent;
+                    position: absolute;
+                    right: 0;
+                    line-height: 55px;
+                    text-align: center;
+
+                    i{
+                        font-size: 25px;
+                        color: #0E4097;
+                    }
+                }
+            }
         }
     }
 }
