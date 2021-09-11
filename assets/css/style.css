@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.chatBot-Overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(170deg, rgba(84, 158, 255, 0.692) 0%, rgba(14, 64, 151, 0.692) 100%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.chatBot-Overlay .progressBar {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 20px;
+  position: relative;
+  top: 30px;
+  height: 7px;
+  background-color: #acacac;
+  margin: 0 auto;
+}
+
+.chatBot-Overlay .progressBar .currentProgress {
+  width: 80%;
+  background-color: white;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.chatBot-Overlay img {
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.chatBot-Overlay .chatContainer {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  width: 500px;
+  height: 650px;
+  background-color: #011d4d5b;
+  border-radius: 10px;
+  padding-top: 50px;
+}
+
+.chatBot-Overlay .chatContainer .chatMessages {
+  margin: 0 auto;
+  width: 70%;
+  height: 450px;
+  background-color: red;
+}
+
+.chatBot-Overlay .chatContainer .textField {
+  width: 85%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 80px;
+}
+/*# sourceMappingURL=style.css.map */
