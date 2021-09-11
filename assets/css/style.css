@@ -9,13 +9,59 @@
   position: absolute;
 }
 
-.chatBot-Overlay {
+.openChat {
   position: absolute;
+  right: 10px;
+  top: 47%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.chatBot-Overlay {
+  position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
   background: linear-gradient(170deg, rgba(84, 158, 255, 0.692) 0%, rgba(14, 64, 151, 0.692) 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+}
+
+.chatBot-Overlay .closeChat {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chatBot-Overlay .closeChat .line {
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.chatBot-Overlay .closeChat .line:first-of-type {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.chatBot-Overlay .closeChat .line:last-of-type {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .chatBot-Overlay .progressBar {
